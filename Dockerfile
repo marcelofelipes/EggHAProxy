@@ -3,9 +3,9 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM haproxytech/haproxy-alpine:2.4
+FROM haproxy:lts-alpine3.21
 
-MAINTAINER Kamesuta, <kamesuta@gmail.com>
+MAINTAINER K
 
 RUN adduser --disabled-password --home /home/container container
 
