@@ -24,7 +24,7 @@ WORKDIR /home/container
 COPY ./entrypoint.sh /entrypoint.sh
 
 # Copiar a configuração do HAProxy para o diretório correto
-COPY ./haproxy.cfg /etc/haproxy/haproxy.cfg
+COPY ./haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg
 
 # Certifique-se de que o arquivo de configuração seja de propriedade do usuário container
 RUN chown container:container /etc/haproxy/haproxy.cfg
